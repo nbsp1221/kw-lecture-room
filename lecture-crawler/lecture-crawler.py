@@ -51,11 +51,11 @@ def get_lecture_info(syllabus_info):
 
 		# If there is no lecture room
 		if lecture_room_name == None:
-			return []
+			continue
 
 		# If it is online lecture
 		if week_name == '토':
-			return []
+			continue
 
 		if timetable_info['timeNo1'] != None: class_time.append(timetable_info['timeNo1'])
 		if timetable_info['timeNo2'] != None: class_time.append(timetable_info['timeNo2'])
