@@ -84,7 +84,7 @@ def get_lecture_info(syllabus_info):
 	
 	return lecture_info
 
-def progressBar(value, end_value, bar_length = 30):
+def progress_bar(value, end_value, bar_length = 30):
 	percent = value / end_value
 	arrow = '-' * int(round(percent * bar_length) - 1) + '>'
 	spaces = ' ' * (bar_length - len(arrow))
@@ -153,7 +153,7 @@ def main():
 		lecture_list += lecture_info
 
 		progress_count += 1
-		progressBar(progress_count, syllabus_count)
+		progress_bar(progress_count, syllabus_count)
 		time.sleep(0.25)
 
 	print('')
